@@ -1,0 +1,43 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "plant watering",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CheckPlantWateringSchedule",
+          "slots": [
+            {
+              "name": "plant",
+              "type": "AMAZON.AlphaNumeric"
+            },
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "should I be watering my {plant} every {number} days",
+            "how often do {plant}  need to be watered",
+            "how often should I water my {plant}",
+            "check my {plant} watering schedule",
+            "how often does my {plant} need to be watered"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "1"
+}
